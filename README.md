@@ -13,12 +13,9 @@ An Android application that acts as a transparent bridge between an attached USB
 ---
 
 ## 📥 Download Latest APK
-Every time code is pushed to this repository, GitHub Actions automatically builds the latest APK.
+Every time code is pushed to this repository, GitHub Actions automatically builds the APK and attaches it to the "Latest Build" release.
 
-**[⬇️ Download Latest APK from GitHub Actions](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY/actions/workflows/build.yml)**  
-*(Click on the latest passing workflow run, and download the `UART-DFU-Bridge-APK` zip file at the bottom of the page).*
-
-> **Note for direct links:** If you have `nightly.link` configured, you can replace this section with a direct persistent link to the latest compiled `.zip` file!
+**[⬇️ Download Latest APK](https://github.com/AmpongJkevin2/tcpuart-brige/releases/download/latest/app-debug.apk)**  
 
 ---
 
@@ -39,8 +36,8 @@ You can easily compile this project yourself using the standard Android Gradle w
    ```
 2. **Clone and Build:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-   cd YOUR_REPOSITORY
+   git clone https://github.com/AmpongJkevin2/tcpuart-brige.git
+   cd tcpuart-brige
    
    # Make the wrapper executable
    chmod +x gradlew
@@ -61,8 +58,8 @@ Building Android projects natively in Termux requires a few specific packages.
 2. *Note:* Because standard Android SDK build tools (like `aapt2`) are compiled for standard Linux (glibc) and not Android's native bionic libc, building directly in Termux using `./gradlew` often requires specific patched Android SDKs or tools like `termux-aapt`. 
 3. If you have an environment capable of running `aapt2` (or are running a proot-distro like Ubuntu within Termux):
    ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-   cd YOUR_REPOSITORY
+   git clone https://github.com/AmpongJkevin2/tcpuart-brige.git
+   cd tcpuart-brige
    chmod +x gradlew
    ./gradlew assembleDebug
    ```
