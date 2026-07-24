@@ -96,4 +96,15 @@
 
     </PreferenceCategory>
 
+    <!-- ── About ────────────────────────────────────────────────────── -->
+    <PreferenceCategory app:title="About">
+
+        <Preference
+            app:key="about_author"
+            app:title="Created by"
+            app:summary="AmpongJkevin2"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
