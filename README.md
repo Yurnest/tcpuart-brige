@@ -69,12 +69,30 @@ Building Android projects natively in Termux requires a few specific packages.
 
 ---
 
-## 💡 Usage Example
+## 💡 Usage Examples
 
-If you've connected an ESP32 to your phone and started the bridge on port **8080** with a Baud Rate of **115200**:
+If you've connected an ESP32 or similar device to your phone and started the bridge on port **8080** with a Baud Rate of **115200**, you can connect to it natively using your favorite microcontroller tools over the network.
 
-To open a raw serial console from your local machine, use `netcat` (avoid using `telnet`, as telnet injects hidden negotiation bytes that will scramble your serial data):
+**Raw Serial Console (netcat)**
+To open a raw serial console, use `netcat` (avoid using `telnet`, as telnet injects hidden negotiation bytes that will scramble your serial data):
 ```bash
 rlwrap nc 127.0.0.1 8080
 ```
 *(We recommend `rlwrap` to give you command history and arrow-key support).*
+
+**esptool.py**
+You can flash ESP32 boards directly over the network:
+```bash
+esptool.py --port socket://127.0.0.1:8080 flash_id
+```
+
+**mpremote (MicroPython)**
+To connect to a MicroPython REPL via the bridge:
+```bash
+mpremote connect socket://127.0.0.1:8080
+```
+
+---
+
+## 🤖 AI Disclaimer
+*Transparency note: The codebase, UI overhaul, networking fixes, and documentation for this project were developed with the assistance of an AI coding agent (Google Antigravity / Gemini).*
