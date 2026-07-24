@@ -105,6 +105,12 @@
             app:summary="AmpongJkevin2"
             app:iconSpaceReserved="false"/>
 
+        <Preference
+            app:key="about_repo"
+            app:title="Source Code"
+            app:summary="github.com/AmpongJkevin2/tcpuart-brige"
+            app:iconSpaceReserved="false"/>
+
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -93,6 +93,10 @@ class MainActivity : AppCompatActivity() {
             tvLog.text = ""
         }
 
+        findViewById<TextView>(R.id.tvCredits).setOnClickListener {
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/AmpongJkevin2")))
+        }
+
         setupRecyclerView()
         setupButtons()
         setupServiceCallbacks()
