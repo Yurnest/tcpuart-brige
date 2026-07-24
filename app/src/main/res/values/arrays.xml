@@ -1,0 +1,55 @@
+<resources>
+    <!-- Theme entries -->
+    <string-array name="theme_entries">
+        <item>Follow system</item>
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>system</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+
+    <!-- Font size entries -->
+    <string-array name="font_size_entries">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Extra large</item>
+    </string-array>
+    <string-array name="font_size_values">
+        <item>small</item>
+        <item>normal</item>
+        <item>large</item>
+        <item>xlarge</item>
+    </string-array>
+
+    <!-- Reconnect interval entries -->
+    <string-array name="reconnect_interval_entries">
+        <item>3 seconds</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>30 seconds</item>
+    </string-array>
+    <string-array name="reconnect_interval_values">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+    </string-array>
+
+    <!-- Max reconnect attempts entries -->
+    <string-array name="reconnect_max_entries">
+        <item>3 attempts</item>
+        <item>5 attempts</item>
+        <item>10 attempts</item>
+        <item>Unlimited</item>
+    </string-array>
+    <string-array name="reconnect_max_values">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>0</item>
+    </string-array>
+</resources>

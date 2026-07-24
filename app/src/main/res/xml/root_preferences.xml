@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- ── Appearance ───────────────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_header_appearance">
+
+        <ListPreference
+            app:key="theme"
+            app:title="@string/pref_theme_title"
+            app:entries="@array/theme_entries"
+            app:entryValues="@array/theme_values"
+            app:defaultValue="system"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+        <ListPreference
+            app:key="font_size"
+            app:title="@string/pref_font_size_title"
+            app:entries="@array/font_size_entries"
+            app:entryValues="@array/font_size_values"
+            app:defaultValue="normal"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <!-- ── Bridge defaults ──────────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_header_bridge">
+
+        <EditTextPreference
+            app:key="default_port"
+            app:title="@string/pref_port_title"
+            app:summary="@string/pref_port_summary"
+            app:defaultValue="8080"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreferenceCompat
+            app:key="assert_dtr"
+            app:title="@string/pref_dtr_title"
+            app:summary="@string/pref_dtr_summary"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+    <!-- ── Auto-reconnect ───────────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_header_reconnect">
+
+        <SwitchPreferenceCompat
+            app:key="auto_reconnect"
+            app:title="@string/pref_auto_reconnect_title"
+            app:summary="@string/pref_auto_reconnect_summary"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+
+        <ListPreference
+            app:key="reconnect_interval"
+            app:title="@string/pref_reconnect_interval_title"
+            app:entries="@array/reconnect_interval_entries"
+            app:entryValues="@array/reconnect_interval_values"
+            app:defaultValue="5"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"
+            app:dependency="auto_reconnect"/>
+
+        <ListPreference
+            app:key="reconnect_max"
+            app:title="@string/pref_reconnect_max_title"
+            app:entries="@array/reconnect_max_entries"
+            app:entryValues="@array/reconnect_max_values"
+            app:defaultValue="5"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"
+            app:dependency="auto_reconnect"/>
+
+    </PreferenceCategory>
+
+    <!-- ── Notifications ────────────────────────────────────────────── -->
+    <PreferenceCategory app:title="@string/pref_header_notifications">
+
+        <SwitchPreferenceCompat
+            app:key="notify_disconnect"
+            app:title="@string/pref_notify_disconnect_title"
+            app:summary="@string/pref_notify_disconnect_summary"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+
+        <SwitchPreferenceCompat
+            app:key="notify_reconnect"
+            app:title="@string/pref_notify_reconnect_title"
+            app:summary="@string/pref_notify_reconnect_summary"
+            app:defaultValue="true"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

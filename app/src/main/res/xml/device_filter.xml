@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- CDC / ACM (e.g. Arduino Uno original, many ESP32-S3 boards) -->
+    <usb-device class="2" subclass="2" protocol="1" />
+    <usb-device class="10" subclass="0" protocol="0" />
+
+    <!-- FTDI FT232 / FT231x / FT234xD -->
+    <usb-device vendor-id="1027" product-id="24577" />
+    <usb-device vendor-id="1027" product-id="24592" />
+    <usb-device vendor-id="1027" product-id="24593" />
+    <usb-device vendor-id="1027" product-id="24596" />
+
+    <!-- Silicon Labs CP2102 / CP2105 / CP2108 / CP2110 -->
+    <usb-device vendor-id="4292" product-id="60000" />
+    <usb-device vendor-id="4292" product-id="60016" />
+    <usb-device vendor-id="4292" product-id="60017" />
+    <usb-device vendor-id="4292" product-id="60032" />
+
+    <!-- QinHeng CH340 / CH341 -->
+    <usb-device vendor-id="6790" product-id="29987" />
+    <usb-device vendor-id="6790" product-id="21795" />
+
+    <!-- Prolific PL2303 -->
+    <usb-device vendor-id="1659" product-id="8963" />
+
+    <!-- Arduino Uno R4 Minima — runtime mode (CDC serial) -->
+    <usb-device vendor-id="9025" product-id="105" />   <!-- 0x2341:0x0069 -->
+    <!-- Arduino Uno R4 Minima — DFU mode (after double-tap reset) -->
+    <usb-device vendor-id="9025" product-id="873" />   <!-- 0x2341:0x0369 -->
+</resources>

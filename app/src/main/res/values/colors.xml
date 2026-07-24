@@ -1,0 +1,37 @@
+<resources>
+    <!-- Light palette -->
+    <color name="md_primary">#5C6BC0</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#E8EAF6</color>
+    <color name="md_on_primary_container">#1A237E</color>
+    <color name="md_secondary">#00ACC1</color>
+    <color name="md_on_secondary">#FFFFFF</color>
+    <color name="md_secondary_container">#E0F7FA</color>
+    <color name="md_on_secondary_container">#00363A</color>
+    <color name="md_tertiary">#7E57C2</color>
+    <color name="md_on_tertiary">#FFFFFF</color>
+    <color name="md_tertiary_container">#EDE7F6</color>
+    <color name="md_on_tertiary_container">#4527A0</color>
+    <color name="md_background">#F5F5FF</color>
+    <color name="md_on_background">#1A1A2E</color>
+    <color name="md_surface">#FFFFFF</color>
+    <color name="md_on_surface">#1A1A2E</color>
+    <color name="md_surface_variant">#E8EAF6</color>
+    <color name="md_on_surface_variant">#3D3D6B</color>
+    <color name="md_outline">#9494C0</color>
+    <color name="md_error">#B00020</color>
+    <color name="md_on_error">#FFFFFF</color>
+
+    <!-- Semantic status colours -->
+    <color name="status_connected">#2E7D32</color>
+    <color name="status_disconnected">#C62828</color>
+    <color name="status_idle">#757575</color>
+    <color name="status_flashing">#F57F17</color>
+    <color name="status_reconnecting">#1565C0</color>
+
+    <!-- Shared -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="scrim">#99000000</color>
+</resources>
