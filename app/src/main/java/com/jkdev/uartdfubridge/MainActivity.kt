@@ -154,7 +154,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun loadDefaults() {
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)
-        etPort.setText(prefs.getString("default_port", "8080"))
+        etPort.setText(prefs.getString("default_port", "8888"))
         etBaud.setText("250000")
         cbDtr.isChecked = prefs.getBoolean("assert_dtr", true)
     }
