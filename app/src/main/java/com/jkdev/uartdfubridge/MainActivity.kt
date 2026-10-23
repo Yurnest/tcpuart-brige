@@ -151,12 +151,16 @@ class MainActivity : AppCompatActivity() {
         resources.updateConfiguration(config, resources.displayMetrics)
     }
 
+
     private fun loadDefaults() {
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)
         etPort.setText(prefs.getString("default_port", "8080"))
+        etBaud.setText("250000")
         cbDtr.isChecked = prefs.getBoolean("assert_dtr", true)
     }
 
+
+    
     private fun setupRecyclerView() {
         deviceAdapter = DeviceAdapter { device ->
             selectedDevice = device
